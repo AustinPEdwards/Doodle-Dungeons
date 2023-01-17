@@ -1,0 +1,1063 @@
+#include "TerrainGeneration.h"
+#include <iostream>
+#include <vector>
+using namespace std;
+void Room1(vector <int> &posX, vector <int> &posY)
+{
+	posX.push_back(6); posY.push_back(1);
+	posX.push_back(16); posY.push_back(1);
+	posX.push_back(7); posY.push_back(2);
+	posX.push_back(15); posY.push_back(2);
+	posX.push_back(2); posY.push_back(3);
+	posX.push_back(3); posY.push_back(3);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(19); posY.push_back(3);
+	posX.push_back(20); posY.push_back(3);
+	posX.push_back(3); posY.push_back(4);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(19); posY.push_back(4);
+	posX.push_back(3); posY.push_back(8);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(19); posY.push_back(8);
+	posX.push_back(2); posY.push_back(9);
+	posX.push_back(3); posY.push_back(9);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(19); posY.push_back(9);
+	posX.push_back(20); posY.push_back(9);
+	posX.push_back(7); posY.push_back(10);
+	posX.push_back(15); posY.push_back(10);
+	posX.push_back(6); posY.push_back(11);
+	posX.push_back(16); posY.push_back(11);
+	return;
+}
+
+void Room2(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(5); posY.push_back(2);
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(17); posY.push_back(2);
+	posX.push_back(3); posY.push_back(3);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(19); posY.push_back(3);
+	posX.push_back(4); posY.push_back(4);
+	posX.push_back(18); posY.push_back(4);
+	posX.push_back(4); posY.push_back(8);
+	posX.push_back(18); posY.push_back(8);
+	posX.push_back(3); posY.push_back(9);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(19); posY.push_back(9);
+	posX.push_back(5); posY.push_back(10);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	posX.push_back(17); posY.push_back(10);
+	return;
+}
+
+void Room3(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(6); posY.push_back(3);
+	posX.push_back(7); posY.push_back(3);
+	posX.push_back(15); posY.push_back(3);
+	posX.push_back(16); posY.push_back(3);
+	posX.push_back(4); posY.push_back(4);
+	posX.push_back(8); posY.push_back(4);
+	posX.push_back(14); posY.push_back(4);
+	posX.push_back(18); posY.push_back(4);
+	posX.push_back(4); posY.push_back(5);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(18); posY.push_back(5);
+	posX.push_back(2); posY.push_back(6);
+	posX.push_back(3); posY.push_back(6);
+	posX.push_back(19); posY.push_back(6);
+	posX.push_back(20); posY.push_back(6);
+	posX.push_back(4); posY.push_back(7);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(18); posY.push_back(7);
+	posX.push_back(4); posY.push_back(8);
+	posX.push_back(8); posY.push_back(8);
+	posX.push_back(14); posY.push_back(8);
+	posX.push_back(18); posY.push_back(8);
+	posX.push_back(6); posY.push_back(9);
+	posX.push_back(7); posY.push_back(9);
+	posX.push_back(15); posY.push_back(9);
+	posX.push_back(16); posY.push_back(9);
+	return;
+}
+
+void Room4(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(4); posY.push_back(2);
+	posX.push_back(5); posY.push_back(2);
+	posX.push_back(17); posY.push_back(2);
+	posX.push_back(18); posY.push_back(2);
+	posX.push_back(1); posY.push_back(3);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(21); posY.push_back(3);
+	posX.push_back(1); posY.push_back(4);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(10); posY.push_back(4);
+	posX.push_back(12); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(21); posY.push_back(4);
+	posX.push_back(10); posY.push_back(5);
+	posX.push_back(12); posY.push_back(5);
+	posX.push_back(9); posY.push_back(6);
+	posX.push_back(13); posY.push_back(6);
+	posX.push_back(10); posY.push_back(7);
+	posX.push_back(12); posY.push_back(7);
+	posX.push_back(1); posY.push_back(8);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(10); posY.push_back(8);
+	posX.push_back(12); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(21); posY.push_back(8);
+	posX.push_back(1); posY.push_back(9);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(21); posY.push_back(9);
+	posX.push_back(4); posY.push_back(10);
+	posX.push_back(5); posY.push_back(10);
+	posX.push_back(17); posY.push_back(10);
+	posX.push_back(18); posY.push_back(10);
+	return;
+}
+
+void Room5(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(7); posY.push_back(1);
+	posX.push_back(15); posY.push_back(1);
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(3); posY.push_back(2);
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(19); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(10); posY.push_back(3);
+	posX.push_back(12); posY.push_back(3);
+	posX.push_back(9); posY.push_back(4);
+	posX.push_back(13); posY.push_back(4);
+	posX.push_back(9); posY.push_back(8);
+	posX.push_back(13); posY.push_back(8);
+	posX.push_back(10); posY.push_back(9);
+	posX.push_back(12); posY.push_back(9);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(3); posY.push_back(10);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	posX.push_back(19); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	posX.push_back(7); posY.push_back(11);
+	posX.push_back(15); posY.push_back(11);
+	return;
+}
+
+void Room6(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(2); posY.push_back(4);
+	posX.push_back(3); posY.push_back(4);
+	posX.push_back(9); posY.push_back(4);
+	posX.push_back(13); posY.push_back(4);
+	posX.push_back(19); posY.push_back(4);
+	posX.push_back(20); posY.push_back(4);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(7); posY.push_back(5);
+	posX.push_back(15); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(4); posY.push_back(6);
+	posX.push_back(5); posY.push_back(6);
+	posX.push_back(8); posY.push_back(6);
+	posX.push_back(14); posY.push_back(6);
+	posX.push_back(17); posY.push_back(6);
+	posX.push_back(18); posY.push_back(6);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(7); posY.push_back(7);
+	posX.push_back(15); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(2); posY.push_back(8);
+	posX.push_back(3); posY.push_back(8);
+	posX.push_back(9); posY.push_back(8);
+	posX.push_back(13); posY.push_back(8);
+	posX.push_back(19); posY.push_back(8);
+	posX.push_back(20); posY.push_back(8);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	return;
+}
+
+void Room7(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(9); posY.push_back(2);
+	posX.push_back(10); posY.push_back(2);
+	posX.push_back(12); posY.push_back(2);
+	posX.push_back(13); posY.push_back(2);
+	posX.push_back(10); posY.push_back(3);
+	posX.push_back(12); posY.push_back(3);
+	posX.push_back(6); posY.push_back(4);
+	posX.push_back(10); posY.push_back(4);
+	posX.push_back(12); posY.push_back(4);
+	posX.push_back(16); posY.push_back(4);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(4); posY.push_back(6);
+	posX.push_back(5); posY.push_back(6);
+	posX.push_back(17); posY.push_back(6);
+	posX.push_back(18); posY.push_back(6);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(6); posY.push_back(8);
+	posX.push_back(10); posY.push_back(8);
+	posX.push_back(12); posY.push_back(8);
+	posX.push_back(16); posY.push_back(8);
+	posX.push_back(10); posY.push_back(9);
+	posX.push_back(12); posY.push_back(9);
+	posX.push_back(9); posY.push_back(10);
+	posX.push_back(10); posY.push_back(10);
+	posX.push_back(12); posY.push_back(10);
+	posX.push_back(13); posY.push_back(10);
+	return;
+}
+
+void Room8(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(3); posY.push_back(1);
+	posX.push_back(19); posY.push_back(1);
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(5); posY.push_back(2);
+	posX.push_back(17); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(6); posY.push_back(3);
+	posX.push_back(7); posY.push_back(3);
+	posX.push_back(15); posY.push_back(3);
+	posX.push_back(16); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(6); posY.push_back(9);
+	posX.push_back(7); posY.push_back(9);
+	posX.push_back(15); posY.push_back(9);
+	posX.push_back(16); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(5); posY.push_back(10);
+	posX.push_back(17); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	posX.push_back(3); posY.push_back(11);
+	posX.push_back(19); posY.push_back(11);
+	return;
+}
+
+void Room9(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(10); posY.push_back(3);
+	posX.push_back(12); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(3); posY.push_back(5);
+	posX.push_back(19); posY.push_back(5);
+	posX.push_back(2); posY.push_back(6);
+	posX.push_back(20); posY.push_back(6);
+	posX.push_back(3); posY.push_back(7);
+	posX.push_back(19); posY.push_back(7);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(10); posY.push_back(9);
+	posX.push_back(12); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	return;
+}
+
+void Room10(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(3); posY.push_back(3);
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(19); posY.push_back(3);
+	posX.push_back(2); posY.push_back(4);
+	posX.push_back(6); posY.push_back(4);
+	posX.push_back(8); posY.push_back(4);
+	posX.push_back(14); posY.push_back(4);
+	posX.push_back(16); posY.push_back(4);
+	posX.push_back(20); posY.push_back(4);
+	posX.push_back(2); posY.push_back(8);
+	posX.push_back(6); posY.push_back(8);
+	posX.push_back(8); posY.push_back(8);
+	posX.push_back(14); posY.push_back(8);
+	posX.push_back(16); posY.push_back(8);
+	posX.push_back(20); posY.push_back(8);
+	posX.push_back(3); posY.push_back(9);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	posX.push_back(19); posY.push_back(9);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	return;
+}
+
+void Room11(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(6); posY.push_back(4);
+	posX.push_back(9); posY.push_back(4);
+	posX.push_back(13); posY.push_back(4);
+	posX.push_back(16); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(8); posY.push_back(5);
+	posX.push_back(14); posY.push_back(5);
+	posX.push_back(8); posY.push_back(7);
+	posX.push_back(14); posY.push_back(7);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(6); posY.push_back(8);
+	posX.push_back(9); posY.push_back(8);
+	posX.push_back(13); posY.push_back(8);
+	posX.push_back(16); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	return;
+}
+
+void Room12(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(10); posY.push_back(2);
+	posX.push_back(12); posY.push_back(2);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(10); posY.push_back(10);
+	posX.push_back(12); posY.push_back(10);
+	return;
+}
+
+void Room13(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(1); posY.push_back(2);
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(21); posY.push_back(2);
+	posX.push_back(8); posY.push_back(4);
+	posX.push_back(14); posY.push_back(4);
+	posX.push_back(6); posY.push_back(5);
+	posX.push_back(7); posY.push_back(5);
+	posX.push_back(15); posY.push_back(5);
+	posX.push_back(16); posY.push_back(5);
+	posX.push_back(6); posY.push_back(7);
+	posX.push_back(7); posY.push_back(7);
+	posX.push_back(15); posY.push_back(7);
+	posX.push_back(16); posY.push_back(7);
+	posX.push_back(8); posY.push_back(8);
+	posX.push_back(14); posY.push_back(8);
+	posX.push_back(1); posY.push_back(10);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	posX.push_back(21); posY.push_back(10);
+	return;
+}
+
+void Room14(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(3); posY.push_back(1);
+	posX.push_back(19); posY.push_back(1);
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(4); posY.push_back(2);
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(18); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(2); posY.push_back(3);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(7); posY.push_back(3);
+	posX.push_back(15); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(20); posY.push_back(3);
+	posX.push_back(6); posY.push_back(4);
+	posX.push_back(16); posY.push_back(4);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(3); posY.push_back(5);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(19); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(3); posY.push_back(7);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(19); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(6); posY.push_back(8);
+	posX.push_back(16); posY.push_back(8);
+	posX.push_back(2); posY.push_back(9);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(7); posY.push_back(9);
+	posX.push_back(15); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(20); posY.push_back(9);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(4); posY.push_back(10);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	posX.push_back(18); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	posX.push_back(3); posY.push_back(11);
+	posX.push_back(19); posY.push_back(11);
+	return;
+}
+
+void Room15(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(7); posY.push_back(4);
+	posX.push_back(10); posY.push_back(4);
+	posX.push_back(12); posY.push_back(4);
+	posX.push_back(15); posY.push_back(4);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(3); posY.push_back(5);
+	posX.push_back(4); posY.push_back(5);
+	posX.push_back(8); posY.push_back(5);
+	posX.push_back(10); posY.push_back(5);
+	posX.push_back(12); posY.push_back(5);
+	posX.push_back(14); posY.push_back(5);
+	posX.push_back(18); posY.push_back(5);
+	posX.push_back(19); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(3); posY.push_back(7);
+	posX.push_back(4); posY.push_back(7);
+	posX.push_back(8); posY.push_back(7);
+	posX.push_back(10); posY.push_back(7);
+	posX.push_back(12); posY.push_back(7);
+	posX.push_back(14); posY.push_back(7);
+	posX.push_back(18); posY.push_back(7);
+	posX.push_back(19); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(7); posY.push_back(8);
+	posX.push_back(10); posY.push_back(8);
+	posX.push_back(12); posY.push_back(8);
+	posX.push_back(15); posY.push_back(8);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	return;
+}
+
+void Room16(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(4); posY.push_back(2);
+	posX.push_back(18); posY.push_back(2);
+	posX.push_back(3); posY.push_back(3);
+	posX.push_back(6); posY.push_back(3);
+	posX.push_back(11); posY.push_back(3);
+	posX.push_back(16); posY.push_back(3);
+	posX.push_back(19); posY.push_back(3);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(6); posY.push_back(4);
+	posX.push_back(10); posY.push_back(4);
+	posX.push_back(12); posY.push_back(4);
+	posX.push_back(16); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(7); posY.push_back(5);
+	posX.push_back(8); posY.push_back(5);
+	posX.push_back(10); posY.push_back(5);
+	posX.push_back(12); posY.push_back(5);
+	posX.push_back(14); posY.push_back(5);
+	posX.push_back(15); posY.push_back(5);
+	posX.push_back(7); posY.push_back(7);
+	posX.push_back(8); posY.push_back(7);
+	posX.push_back(10); posY.push_back(7);
+	posX.push_back(12); posY.push_back(7);
+	posX.push_back(14); posY.push_back(7);
+	posX.push_back(15); posY.push_back(7);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(6); posY.push_back(8);
+	posX.push_back(10); posY.push_back(8);
+	posX.push_back(12); posY.push_back(8);
+	posX.push_back(16); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(3); posY.push_back(9);
+	posX.push_back(6); posY.push_back(9);
+	posX.push_back(11); posY.push_back(9);
+	posX.push_back(16); posY.push_back(9);
+	posX.push_back(19); posY.push_back(9);
+	posX.push_back(4); posY.push_back(10);
+	posX.push_back(18); posY.push_back(10);
+	return;
+}
+
+void Room17(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(3); posY.push_back(2);
+	posX.push_back(5); posY.push_back(2);
+	posX.push_back(9); posY.push_back(2);
+	posX.push_back(10); posY.push_back(2);
+	posX.push_back(12); posY.push_back(2);
+	posX.push_back(13); posY.push_back(2);
+	posX.push_back(17); posY.push_back(2);
+	posX.push_back(19); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(1); posY.push_back(3);
+	posX.push_back(6); posY.push_back(3);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(16); posY.push_back(3);
+	posX.push_back(21); posY.push_back(3);
+	posX.push_back(3); posY.push_back(4);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(19); posY.push_back(4);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(4); posY.push_back(6);
+	posX.push_back(5); posY.push_back(6);
+	posX.push_back(17); posY.push_back(6);
+	posX.push_back(18); posY.push_back(6);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(3); posY.push_back(8);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(19); posY.push_back(8);
+	posX.push_back(1); posY.push_back(9);
+	posX.push_back(6); posY.push_back(9);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(16); posY.push_back(9);
+	posX.push_back(21); posY.push_back(9);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(3); posY.push_back(10);
+	posX.push_back(5); posY.push_back(10);
+	posX.push_back(9); posY.push_back(10);
+	posX.push_back(10); posY.push_back(10);
+	posX.push_back(12); posY.push_back(10);
+	posX.push_back(13); posY.push_back(10);
+	posX.push_back(17); posY.push_back(10);
+	posX.push_back(19); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	return;
+}
+
+void Room18(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(3); posY.push_back(3);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(7); posY.push_back(3);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(15); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(19); posY.push_back(3);
+	posX.push_back(7); posY.push_back(4);
+	posX.push_back(15); posY.push_back(4);
+	posX.push_back(3); posY.push_back(5);
+	posX.push_back(8); posY.push_back(5);
+	posX.push_back(14); posY.push_back(5);
+	posX.push_back(19); posY.push_back(5);
+	posX.push_back(3); posY.push_back(6);
+	posX.push_back(19); posY.push_back(6);
+	posX.push_back(3); posY.push_back(7);
+	posX.push_back(8); posY.push_back(7);
+	posX.push_back(14); posY.push_back(7);
+	posX.push_back(19); posY.push_back(7);
+	posX.push_back(7); posY.push_back(8);
+	posX.push_back(15); posY.push_back(8);
+	posX.push_back(3); posY.push_back(9);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(7); posY.push_back(9);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(15); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(19); posY.push_back(9);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	return;
+}
+
+void Room19(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(1); posY.push_back(1);
+	posX.push_back(2); posY.push_back(1);
+	posX.push_back(3); posY.push_back(1);
+	posX.push_back(7); posY.push_back(1);
+	posX.push_back(15); posY.push_back(1);
+	posX.push_back(19); posY.push_back(1);
+	posX.push_back(20); posY.push_back(1);
+	posX.push_back(21); posY.push_back(1);
+	posX.push_back(1); posY.push_back(2);
+	posX.push_back(5); posY.push_back(2);
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(17); posY.push_back(2);
+	posX.push_back(21); posY.push_back(2);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(2); posY.push_back(4);
+	posX.push_back(3); posY.push_back(4);
+	posX.push_back(4); posY.push_back(4);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(7); posY.push_back(4);
+	posX.push_back(8); posY.push_back(4);
+	posX.push_back(10); posY.push_back(4);
+	posX.push_back(12); posY.push_back(4);
+	posX.push_back(14); posY.push_back(4);
+	posX.push_back(15); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(18); posY.push_back(4);
+	posX.push_back(19); posY.push_back(4);
+	posX.push_back(20); posY.push_back(4);
+	posX.push_back(4); posY.push_back(5);
+	posX.push_back(10); posY.push_back(5);
+	posX.push_back(12); posY.push_back(5);
+	posX.push_back(18); posY.push_back(5);
+	posX.push_back(4); posY.push_back(7);
+	posX.push_back(10); posY.push_back(7);
+	posX.push_back(12); posY.push_back(7);
+	posX.push_back(18); posY.push_back(7);
+	posX.push_back(2); posY.push_back(8);
+	posX.push_back(3); posY.push_back(8);
+	posX.push_back(4); posY.push_back(8);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(7); posY.push_back(8);
+	posX.push_back(8); posY.push_back(8);
+	posX.push_back(10); posY.push_back(8);
+	posX.push_back(12); posY.push_back(8);
+	posX.push_back(14); posY.push_back(8);
+	posX.push_back(15); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(18); posY.push_back(8);
+	posX.push_back(19); posY.push_back(8);
+	posX.push_back(20); posY.push_back(8);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(1); posY.push_back(10);
+	posX.push_back(5); posY.push_back(10);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	posX.push_back(17); posY.push_back(10);
+	posX.push_back(21); posY.push_back(10);
+	posX.push_back(1); posY.push_back(11);
+	posX.push_back(2); posY.push_back(11);
+	posX.push_back(3); posY.push_back(11);
+	posX.push_back(7); posY.push_back(11);
+	posX.push_back(15); posY.push_back(11);
+	posX.push_back(19); posY.push_back(11);
+	posX.push_back(20); posY.push_back(11);
+	posX.push_back(21); posY.push_back(11);
+	return;
+}
+
+void Room20(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(8); posY.push_back(1);
+	posX.push_back(14); posY.push_back(1);
+	posX.push_back(1); posY.push_back(2);
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(21); posY.push_back(2);
+	posX.push_back(1); posY.push_back(3);
+	posX.push_back(21); posY.push_back(3);
+	posX.push_back(3); posY.push_back(4);
+	posX.push_back(4); posY.push_back(4);
+	posX.push_back(7); posY.push_back(4);
+	posX.push_back(8); posY.push_back(4);
+	posX.push_back(14); posY.push_back(4);
+	posX.push_back(15); posY.push_back(4);
+	posX.push_back(18); posY.push_back(4);
+	posX.push_back(19); posY.push_back(4);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(7); posY.push_back(5);
+	posX.push_back(15); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(3); posY.push_back(6);
+	posX.push_back(19); posY.push_back(6);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(7); posY.push_back(7);
+	posX.push_back(15); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(3); posY.push_back(8);
+	posX.push_back(4); posY.push_back(8);
+	posX.push_back(7); posY.push_back(8);
+	posX.push_back(8); posY.push_back(8);
+	posX.push_back(14); posY.push_back(8);
+	posX.push_back(15); posY.push_back(8);
+	posX.push_back(18); posY.push_back(8);
+	posX.push_back(19); posY.push_back(8);
+	posX.push_back(1); posY.push_back(9);
+	posX.push_back(21); posY.push_back(9);
+	posX.push_back(1); posY.push_back(10);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	posX.push_back(21); posY.push_back(10);
+	posX.push_back(8); posY.push_back(11);
+	posX.push_back(14); posY.push_back(11);
+	return;
+}
+
+void Room21(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(3); posY.push_back(2);
+	posX.push_back(4); posY.push_back(2);
+	posX.push_back(5); posY.push_back(2);
+	posX.push_back(7); posY.push_back(2);
+	posX.push_back(9); posY.push_back(2);
+	posX.push_back(13); posY.push_back(2);
+	posX.push_back(15); posY.push_back(2);
+	posX.push_back(17); posY.push_back(2);
+	posX.push_back(18); posY.push_back(2);
+	posX.push_back(19); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(7); posY.push_back(3);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(15); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(1); posY.push_back(4);
+	posX.push_back(3); posY.push_back(4);
+	posX.push_back(4); posY.push_back(4);
+	posX.push_back(9); posY.push_back(4);
+	posX.push_back(13); posY.push_back(4);
+	posX.push_back(18); posY.push_back(4);
+	posX.push_back(19); posY.push_back(4);
+	posX.push_back(21); posY.push_back(4);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(7); posY.push_back(5);
+	posX.push_back(9); posY.push_back(5);
+	posX.push_back(13); posY.push_back(5);
+	posX.push_back(15); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(6); posY.push_back(6);
+	posX.push_back(16); posY.push_back(6);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(7); posY.push_back(7);
+	posX.push_back(9); posY.push_back(7);
+	posX.push_back(13); posY.push_back(7);
+	posX.push_back(15); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(1); posY.push_back(8);
+	posX.push_back(3); posY.push_back(8);
+	posX.push_back(4); posY.push_back(8);
+	posX.push_back(9); posY.push_back(8);
+	posX.push_back(13); posY.push_back(8);
+	posX.push_back(18); posY.push_back(8);
+	posX.push_back(19); posY.push_back(8);
+	posX.push_back(21); posY.push_back(8);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(7); posY.push_back(9);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(15); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(3); posY.push_back(10);
+	posX.push_back(4); posY.push_back(10);
+	posX.push_back(5); posY.push_back(10);
+	posX.push_back(7); posY.push_back(10);
+	posX.push_back(9); posY.push_back(10);
+	posX.push_back(13); posY.push_back(10);
+	posX.push_back(15); posY.push_back(10);
+	posX.push_back(17); posY.push_back(10);
+	posX.push_back(18); posY.push_back(10);
+	posX.push_back(19); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	return;
+}
+
+
+void Room22(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(3); posY.push_back(2);
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(19); posY.push_back(2);
+	posX.push_back(2); posY.push_back(3);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(7); posY.push_back(3);
+	posX.push_back(15); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(20); posY.push_back(3);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(3); posY.push_back(5);
+	posX.push_back(4); posY.push_back(5);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(8); posY.push_back(5);
+	posX.push_back(9); posY.push_back(5);
+	posX.push_back(13); posY.push_back(5);
+	posX.push_back(14); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(18); posY.push_back(5);
+	posX.push_back(19); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(7); posY.push_back(6);
+	posX.push_back(15); posY.push_back(6);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(3); posY.push_back(7);
+	posX.push_back(4); posY.push_back(7);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(8); posY.push_back(7);
+	posX.push_back(9); posY.push_back(7);
+	posX.push_back(13); posY.push_back(7);
+	posX.push_back(14); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(18); posY.push_back(7);
+	posX.push_back(19); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(2); posY.push_back(9);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(7); posY.push_back(9);
+	posX.push_back(15); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(20); posY.push_back(9);
+	posX.push_back(3); posY.push_back(10);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	posX.push_back(19); posY.push_back(10);
+	return;
+}
+
+void Room23(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(1); posY.push_back(1);
+	posX.push_back(3); posY.push_back(1);
+	posX.push_back(4); posY.push_back(1);
+	posX.push_back(18); posY.push_back(1);
+	posX.push_back(19); posY.push_back(1);
+	posX.push_back(21); posY.push_back(1);
+	posX.push_back(1); posY.push_back(2);
+	posX.push_back(2); posY.push_back(2);
+	posX.push_back(3); posY.push_back(2);
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(7); posY.push_back(2);
+	posX.push_back(15); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(19); posY.push_back(2);
+	posX.push_back(20); posY.push_back(2);
+	posX.push_back(21); posY.push_back(2);
+	posX.push_back(1); posY.push_back(3);
+	posX.push_back(2); posY.push_back(3);
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(20); posY.push_back(3);
+	posX.push_back(21); posY.push_back(3);
+	posX.push_back(4); posY.push_back(4);
+	posX.push_back(9); posY.push_back(4);
+	posX.push_back(13); posY.push_back(4);
+	posX.push_back(18); posY.push_back(4);
+	posX.push_back(7); posY.push_back(5);
+	posX.push_back(8); posY.push_back(5);
+	posX.push_back(14); posY.push_back(5);
+	posX.push_back(15); posY.push_back(5);
+	posX.push_back(7); posY.push_back(7);
+	posX.push_back(8); posY.push_back(7);
+	posX.push_back(14); posY.push_back(7);
+	posX.push_back(15); posY.push_back(7);
+	posX.push_back(4); posY.push_back(8);
+	posX.push_back(9); posY.push_back(8);
+	posX.push_back(13); posY.push_back(8);
+	posX.push_back(18); posY.push_back(8);
+	posX.push_back(1); posY.push_back(9);
+	posX.push_back(2); posY.push_back(9);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	posX.push_back(20); posY.push_back(9);
+	posX.push_back(21); posY.push_back(9);
+	posX.push_back(1); posY.push_back(10);
+	posX.push_back(2); posY.push_back(10);
+	posX.push_back(3); posY.push_back(10);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(7); posY.push_back(10);
+	posX.push_back(15); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	posX.push_back(19); posY.push_back(10);
+	posX.push_back(20); posY.push_back(10);
+	posX.push_back(21); posY.push_back(10);
+	posX.push_back(1); posY.push_back(11);
+	posX.push_back(3); posY.push_back(11);
+	posX.push_back(4); posY.push_back(11);
+	posX.push_back(18); posY.push_back(11);
+	posX.push_back(19); posY.push_back(11);
+	posX.push_back(21); posY.push_back(11);
+	return;
+}
+
+void Room24(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(3); posY.push_back(2);
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(19); posY.push_back(2);
+	posX.push_back(2); posY.push_back(3);
+	posX.push_back(9); posY.push_back(3);
+	posX.push_back(13); posY.push_back(3);
+	posX.push_back(20); posY.push_back(3);
+	posX.push_back(5); posY.push_back(4);
+	posX.push_back(10); posY.push_back(4);
+	posX.push_back(12); posY.push_back(4);
+	posX.push_back(17); posY.push_back(4);
+	posX.push_back(1); posY.push_back(5);
+	posX.push_back(2); posY.push_back(5);
+	posX.push_back(3); posY.push_back(5);
+	posX.push_back(4); posY.push_back(5);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(9); posY.push_back(5);
+	posX.push_back(10); posY.push_back(5);
+	posX.push_back(12); posY.push_back(5);
+	posX.push_back(13); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(18); posY.push_back(5);
+	posX.push_back(19); posY.push_back(5);
+	posX.push_back(20); posY.push_back(5);
+	posX.push_back(21); posY.push_back(5);
+	posX.push_back(1); posY.push_back(7);
+	posX.push_back(2); posY.push_back(7);
+	posX.push_back(3); posY.push_back(7);
+	posX.push_back(4); posY.push_back(7);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(9); posY.push_back(7);
+	posX.push_back(10); posY.push_back(7);
+	posX.push_back(12); posY.push_back(7);
+	posX.push_back(13); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(18); posY.push_back(7);
+	posX.push_back(19); posY.push_back(7);
+	posX.push_back(20); posY.push_back(7);
+	posX.push_back(21); posY.push_back(7);
+	posX.push_back(5); posY.push_back(8);
+	posX.push_back(10); posY.push_back(8);
+	posX.push_back(12); posY.push_back(8);
+	posX.push_back(17); posY.push_back(8);
+	posX.push_back(2); posY.push_back(9);
+	posX.push_back(9); posY.push_back(9);
+	posX.push_back(13); posY.push_back(9);
+	posX.push_back(20); posY.push_back(9);
+	posX.push_back(3); posY.push_back(10);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	posX.push_back(19); posY.push_back(10);
+	return;
+}
+
+void Room25(vector<int>& posX, vector<int>& posY)
+{
+	posX.push_back(1); posY.push_back(1);
+	posX.push_back(2); posY.push_back(1);
+	posX.push_back(8); posY.push_back(1);
+	posX.push_back(14); posY.push_back(1);
+	posX.push_back(20); posY.push_back(1);
+	posX.push_back(21); posY.push_back(1);
+	posX.push_back(1); posY.push_back(2);
+	posX.push_back(6); posY.push_back(2);
+	posX.push_back(8); posY.push_back(2);
+	posX.push_back(14); posY.push_back(2);
+	posX.push_back(16); posY.push_back(2);
+	posX.push_back(21); posY.push_back(2);
+	posX.push_back(3); posY.push_back(3);
+	posX.push_back(4); posY.push_back(3);
+	posX.push_back(5); posY.push_back(3);
+	posX.push_back(8); posY.push_back(3);
+	posX.push_back(14); posY.push_back(3);
+	posX.push_back(17); posY.push_back(3);
+	posX.push_back(18); posY.push_back(3);
+	posX.push_back(19); posY.push_back(3);
+	posX.push_back(4); posY.push_back(5);
+	posX.push_back(5); posY.push_back(5);
+	posX.push_back(9); posY.push_back(5);
+	posX.push_back(10); posY.push_back(5);
+	posX.push_back(12); posY.push_back(5);
+	posX.push_back(13); posY.push_back(5);
+	posX.push_back(17); posY.push_back(5);
+	posX.push_back(18); posY.push_back(5);
+	posX.push_back(4); posY.push_back(7);
+	posX.push_back(5); posY.push_back(7);
+	posX.push_back(9); posY.push_back(7);
+	posX.push_back(10); posY.push_back(7);
+	posX.push_back(12); posY.push_back(7);
+	posX.push_back(13); posY.push_back(7);
+	posX.push_back(17); posY.push_back(7);
+	posX.push_back(18); posY.push_back(7);
+	posX.push_back(3); posY.push_back(9);
+	posX.push_back(4); posY.push_back(9);
+	posX.push_back(5); posY.push_back(9);
+	posX.push_back(8); posY.push_back(9);
+	posX.push_back(14); posY.push_back(9);
+	posX.push_back(17); posY.push_back(9);
+	posX.push_back(18); posY.push_back(9);
+	posX.push_back(19); posY.push_back(9);
+	posX.push_back(1); posY.push_back(10);
+	posX.push_back(6); posY.push_back(10);
+	posX.push_back(8); posY.push_back(10);
+	posX.push_back(14); posY.push_back(10);
+	posX.push_back(16); posY.push_back(10);
+	posX.push_back(21); posY.push_back(10);
+	posX.push_back(1); posY.push_back(11);
+	posX.push_back(2); posY.push_back(11);
+	posX.push_back(8); posY.push_back(11);
+	posX.push_back(14); posY.push_back(11);
+	posX.push_back(20); posY.push_back(11);
+	posX.push_back(21); posY.push_back(11);
+	return;
+}
+
+
